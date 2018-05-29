@@ -1,0 +1,1287 @@
+/*
+----------------------------------------------------------------------------------------------------
+GLOBAL STYLE
+----------------------------------------------------------------------------------------------------
+*/
+
+@font-face {
+  font-family: 'Birdy';
+  src: url(../images/Birdy.otf);
+}
+@font-face {
+  font-family: 'Gill Sans MT Regular';
+  src: url(../images/Gill Sans MT Regular.ttf);
+}
+@font-face {
+  font-family: 'Gill Sans MT Bold';
+  src: url(../images/Gill Sans MT Bold.ttf);
+}
+@font-face {
+  font-family: 'Gill Sans MT Italic';
+  src: url(../images/Gill Sans MT Italic.ttf);
+}
+@font-face {
+  font-family: 'Gill Sans MT Bold Italic';
+  src: url(../images/Gill Sans MT Bold Italic.ttf);
+}
+
+/*NAVIGATION*/
+nav {
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  position: fixed;
+  z-index: 1;
+  background: #0d0d0d;
+  font-family:'Changa One', cursive;
+}
+ul {
+  list-style: none;
+  margin-left: 50px;
+}
+ul > li {
+  display: inline;
+  line-height: 60px;
+  padding-right: 15px;
+}
+li > a.fa {
+  float: right;
+  line-height: 60px;
+  letter-spacing: 30px;
+}
+li > img.btn {
+  float: right;
+  display: inline;
+  padding: 12px 22px 0 0;
+}
+a {
+  color: #ffffff;
+  font-family: 'Changa One', cursive;
+  font-size: 150%;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffba00;
+}
+
+/*HEADERS*/
+h1 {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 50px;
+  font-family: 'Birdy';
+  font-size: 70px;
+  letter-spacing: 6px;
+  color: #ffba00;
+}
+h1.table-only {
+  padding-bottom: 0px;
+}
+
+/*BODY*/
+div.main {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  padding-bottom: 5%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+article {
+  font-family: 'Gill Sans MT Regular', 'Trebuchet MS', serif;
+}
+p.uppercase {
+  text-transform: uppercase;
+  display: inline;
+}
+p.small-caps {
+  font-family: 'Gill Sans MT Regular', 'Trebuchet MS', serif;
+  font-variant: small-caps;
+  display: inline;
+}
+p.bold {
+  font-family: 'Gill Sans MT Bold', 'Trebuchet MS', serif;
+  display: inline;
+}
+p.yellow {
+  color: #ffba00;
+  display: inline;
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+ HOME STYLE
+----------------------------------------------------------------------------------------------------
+*/
+
+body#bg01 {
+  background-size: cover;
+  background-image: url("../images/PTM Head 04.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 100px;
+}
+img.logo {
+  width: 60%;
+  height: auto;
+  position: sticky;
+  margin: 500px 0 0 750px;
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+ ABOUT STYLE
+----------------------------------------------------------------------------------------------------
+*/
+
+body#bg02 {
+  background-size: cover;
+  background-image: url("../images/PTM Head 4.1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+article {
+  padding: 0 130px 100px 130px;
+  line-height: 1.4;
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+ DISCOG STYLE
+----------------------------------------------------------------------------------------------------
+*/
+
+body#bg03 {
+  background-size: cover;
+  background-image: url("../images/PTM Head 4.2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+div.media-container {
+  width: 900px;
+  height: auto;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.9);
+}
+div.content {
+  width: auto;
+  height: 400;
+  justify-content: center;
+}
+img.cover-art {
+  width: 50%;
+  height: auto;
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+ TOURS STYLE
+----------------------------------------------------------------------------------------------------
+*/
+
+body#bg04 {
+  background-size: cover;
+  background-image: url("../images/PTM Head 4.5.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+table {
+  margin: auto;
+  border-spacing: 50px;
+  border-collapse: separate;
+}
+td {
+  border: 8px solid #ffba00;
+  width: 300px;
+  height: 200px;
+  background-color: #000000;
+  padding: 70px 0 0 30px;
+  text-align: left;
+}
+td#gtm {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../images/tour-locations/GTM Web.png");
+}
+td#gtm:hover {
+  /*font: 0/0 a;  This code will make text disappear! Interesting effect, but it also removes <a> text. Future experiment with making the whole table cell a hyperlink?*/
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/tour-locations/GTM Web.png");
+}
+td#enmore {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../images/tour-locations/Enmore Theater.png");
+}
+td#enmore:hover {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/tour-locations/Enmore Theater.png");
+}
+td#forum {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../images/tour-locations/Forum Theater.png");
+}
+td#forum:hover {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/tour-locations/Forum Theater.png");
+}
+td#powerstation {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../images/tour-locations/Powerstation NZ.jpg");
+}
+td#powerstation:hover {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/tour-locations/Powerstation NZ.jpg");
+}
+td#tivoli {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../images/tour-locations/The Tivoli AUS.jpg");
+}
+td#tivoli:hover {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/tour-locations/The Tivoli AUS.jpg");
+}
+td#hangout {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../images/tour-locations/Hangout Fest 18.png");
+}
+td#hangout:hover {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/tour-locations/Hangout Fest 18.png");
+}
+td#ascend {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../images/tour-locations/Ascend Amphitheater.png");
+}
+td#ascend:hover {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/tour-locations/Ascend Amphitheater.png");
+}
+td#express-live {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../images/tour-locations/EXPRESS LIVE.png");
+}
+td#express-live:hover {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/tour-locations/EXPRESS LIVE.png");
+}
+td#ae {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../images/tour-locations/Stage AE.jpg");
+}
+td#ae:hover {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/tour-locations/Stage AE.jpg");
+}
+td#budweiser {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../images/tour-locations/Budweiser Stage.png");
+}
+td#budweiser:hover {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/tour-locations/Budweiser Stage.png");
+}
+td#boston {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../images/tour-locations/Boston Calling.png");
+}
+td#boston:hover {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/tour-locations/Boston Calling.png");
+}
+td#mt-jam {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../images/tour-locations/Mountain Jam.png");
+}
+td#mt-jam:hover {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/tour-locations/Mountain Jam.png");
+}
+td.more-cells {
+  display: none;
+}
+td.expand {
+  border: 8px solid black;
+  background-color: #ffba00;
+  padding: 0 0 0 0;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Changa One', cursive;
+}
+td.collapse {
+  border: 8px solid black;
+  background-color: #ffba00;
+  padding: 0 0 0 0;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Changa One', cursive;
+  display: none;
+}
+td > p {
+  text-align: left;
+  color: #ffffff;
+  font-family: 'Gill Sans MT Regular', 'Trebuchet MS', sans-serif;
+}
+a.head {
+  font-family: 'Birdy';
+}
+p.ui-view {
+  color: #ffffff;
+  font-family: 'Changa One', cursive;
+  font-size: 150%;
+  text-align: center;
+  text-decoration: none;
+}
+p.ui-view:hover {
+  color: #000000;
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+ MEDIA STYLE
+----------------------------------------------------------------------------------------------------
+*/
+
+body#bg05 {
+  background-size: cover;
+  background-image: url("../images/PTM Head 4.4.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+section {
+  margin-bottom: 50px;
+}
+div.image-container {
+  width: 900px;
+  height: 600px;
+  margin: auto;
+  background-color: rgba(84, 84, 84, 1);
+}
+div.nav-button-left {
+  float: left;
+  margin-top: -300px;
+}
+div.nav-button-right {
+  float: right;
+  margin-top: -300px;
+}
+img.slides {
+  width: 100%;
+  height: 100%;
+}
+div.video {
+  justify-content: center;
+}
+div.video#squeeze {
+  margin-top: -25px;
+}
+div.grid-container {
+  width: 900px;
+  height: auto;
+  margin: auto;
+  text-align: justify;
+  text-justify: distribute-all-lines;
+}
+div.video-small {
+  margin-top: 25px;
+  display: inline-block;
+}
+span.stretch {
+  width: 100%;
+  display: inline-block;
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+ MERCH STYLE
+----------------------------------------------------------------------------------------------------
+*/
+
+body#bg06 {
+  background-size: cover;
+  background-image: url("../images/PTM Head 4.3.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+td.big {
+  border: 8px solid black;
+  width: 300px;
+  height: 250px;
+  background-color: #ffffff;
+  padding: 120px 0 0 40px;
+}
+td.music-merch {
+  border: 8px solid black;
+  width: 300px;
+  height: 250px;
+  background-color: #ffffff;
+  padding: 120px 0 0 40px;
+  display: none;
+}
+td.other-merch {
+  border: 8px solid black;
+  width: 300px;
+  height: 250px;
+  background-color: #ffffff;
+  padding: 120px 0 0 40px;
+  display: none;
+}
+td.apparel-merch {
+  border: 8px solid black;
+  width: 300px;
+  height: 250px;
+  background-color: #ffffff;
+  padding: 120px 0 0 40px;
+  display: none;
+}
+td.cards-merch {
+  border: 8px solid black;
+  width: 300px;
+  height: 250px;
+  background-color: #ffffff;
+  padding: 120px 0 0 40px;
+  display: none;
+}
+td.bundles-merch {
+  border: 8px solid black;
+  width: 300px;
+  height: 250px;
+  background-color: #ffffff;
+  padding: 120px 0 0 40px;
+  display: none;
+}
+td.big#music {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/Music Thumb.png");
+}
+td.big#music:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url("../images/merchandise/Music Thumb.png");
+}
+td.music-merch#woodstock-digital {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Woodstock.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#woodstock-digital:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Woodstock.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#woodstock-cd {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Woodstock CD.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#woodstock-cd:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Woodstock CD.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#woodstock-vinyl {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Woodstock Vinyl.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#woodstock-vinyl:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Woodstock Vinyl.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#evil-friends-digital {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Evil Friends.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#evil-friends-digital:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Evil Friends.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#evil-friends-vinyl {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Evil Friends Vinyl.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#evil-friends-vinyl:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Evil Friends Vinyl.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#mountain-cloud-digital {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM The Mountain The Cloud.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#mountain-cloud-digital:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM The Mountain The Cloud.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#american-ghetto-digital {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM American Ghetto.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#american-ghetto-digital:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM American Ghetto.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#satanic-satanist-digital {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Satanic Satanist.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#satanic-satanist-digital:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Satanic Satanist.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#majestic-majesty-digital {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Majestic Majesty.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#majestic-majesty-digital:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Majestic Majesty.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#censored-colors-digital {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Censored Colors.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#censored-colors-digital:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Censored Colors.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#church-mouth-digital {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Church Mouth.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#church-mouth-digital:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Church Mouth.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#waiter-vultures-cd {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM You Vultures! CD.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#waiter-vultures-cd:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM You Vultures! CD.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#wizard-cd {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Wizard CD.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.music-merch#wizard-cd:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Wizard CD.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.big#other {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/Other Thumb.png");
+}
+td.big#other:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url("../images/merchandise/Other Thumb.png");
+}
+td.other-merch#beanie {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Hat 01.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.other-merch#beanie:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Hat 01.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.other-merch#cap {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Hat 02.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.other-merch#cap:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Hat 02.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.other-merch#key-fob {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Key Fob.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.other-merch#key-fob:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Key Fob.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.other-merch#scarf {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Scarf.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.other-merch#scarf:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Scarf.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.big#apparel {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../images/merchandise/Apparel Thumb.png");
+}
+td.big#apparel:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("../images/merchandise/Apparel Thumb.png");
+}
+td.apparel-merch#jacket-01 {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Jacket 01.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.apparel-merch#jacket-01:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Jacket 01.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.apparel-merch#jacket-02 {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Jacket 02.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.apparel-merch#jacket-02:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Jacket 02.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.apparel-merch#sleeve-01 {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Sleeve 01.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.apparel-merch#sleeve-01:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Sleeve 01.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.apparel-merch#sleeve-02 {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Sleeve 02.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.apparel-merch#sleeve-02:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Sleeve 02.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.apparel-merch#sleeve-03 {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Sleeve 03.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.apparel-merch#sleeve-03:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Sleeve 03.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.apparel-merch#shirt-01 {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Shirt 01.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.apparel-merch#shirt-01:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Shirt 01.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.apparel-merch#shirt-02 {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Shirt 02.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.apparel-merch#shirt-02:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Shirt 02.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.big#cards {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url("../images/merchandise/Card Thumb.png");
+}
+td.big#cards:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/Card Thumb.png");
+}
+td.cards-merch#digital {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Cards.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.cards-merch#digital:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Cards.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.big#bundles {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/Bundle Thumb.png");
+}
+td.big#bundles:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url("../images/merchandise/Bundle Thumb.png");
+}
+td.bundles-merch#bundle-01 {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Bundle 01.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.bundles-merch#bundle-01:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Bundle 01.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.bundles-merch#bundle-02 {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Bundle 02.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.bundles-merch#bundle-02:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Bundle 02.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.bundles-merch#bundle-03 {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/PTM Bundle 03.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.bundles-merch#bundle-03:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/PTM Bundle 03.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.big > a {
+  color: #000000;
+}
+td.big > p {
+  color: #000000;
+}
+td.big-expand {
+  border: 8px solid #ffba00;
+  width: 300px;
+  height: 250px;
+  background-color: #000000;
+  padding: 0 0 0 0;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Changa One', cursive;
+}
+td.big-expand#shop {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/merchandise/Shop Thumb.png");
+}
+td.big-expand#shop:hover {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../images/merchandise/Shop Thumb.png");
+}
+td.return {
+  border: 8px solid #ffba00;
+  width: 300px;
+  height: 250px;
+  background-color: #000000;
+  padding: 0 0 0 0;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Changa One', cursive;
+  display: none;
+}
+a.merch-head {
+  color: #000000;
+  font-family: 'Birdy';
+}
+a.merch-head:hover {
+  color: #ffba00;
+  font-family: 'Birdy';
+}
+a.head#new-release {
+  color: #ff1e00;
+}
+p.ui-view-alt {
+  color: #ffffff;
+  font-family: 'Changa One', cursive;
+  font-size: 150%;
+  text-align: center;
+  text-decoration: none;
+}
+p.ui-view-alt:hover {
+  color: #ffba00;
+}
+p.price {
+  font-family: 'Gill Sans MT Regular', 'Trebuchet MS', serif;
+  color: #000000;
+}
+p.btn {
+  color: #000000;
+  font-family: 'Changa One', cursive;
+  font-size: 150%;
+  text-align: center;
+  text-decoration: none;
+}
+p.btn:hover {
+  color: #ffba00;
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+ CONTACT STYLE
+----------------------------------------------------------------------------------------------------
+*/
+
+body#bg03 {
+  background-size: cover;
+  background-image: url("../images/PTM Head 4.2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+div.indent {
+  text-indent: 3%;
+}
+a.email {
+  font-family: 'Gill Sans MT Regular', 'Trebuchet MS', sans-serif;
+  font-size: 100%;
+  color: #ffba00;
+}
+
+/*Parent-child relationships are important to understand when handling CSS and JavaScript! Example: <body> is the parent, whereas <h1> is a child.*/
+/*Recall that ".." indicates previous location (folder), whereas "." indicates current location (folder).*/
