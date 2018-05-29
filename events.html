@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="./assets/stylesheets/bulma.min.css" />
   <link rel="stylesheet" href="./assets/stylesheets/styles.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Changa+One" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body id="bg04">
   <nav>
@@ -20,112 +21,151 @@
       <li><a href="media.html">media</a>
       <li><a href="swag.html">merch</a>
       <li><a href="contact.html">contact</a>
+      <li><a href="https://www.facebook.com/portugaltheman" class="fa fa-facebook"></a>
+      <li><a href="https://portugaltheman.tumblr.com/" class="fa fa-tumblr"></a>
+      <li><a href="https://twitter.com/portugaltheman" class="fa fa-twitter"></a>
+      <li><img src="./assets/images/Cart2.svg" class="btn lightbox-81457158784166"></a>
       </li>
     </ul>
   </nav>
   <div class="main">
-  <h1>tours</h1>
+  <h1 class="table-only">tours</h1>
   <table is-bordered>
     <tbody>
       <tr>
-        <td>
-          <a class="head" href="#">Groovin the Moo</a><!--Consider wrapping the text elements with a <p class="#"> so you can adjust leading without messing cell size...-->
+        <td id="gtm">
+          <a class="head" href="https://www.gtm.net.au/adelaide/artist/portugal-the-man/">Groovin the Moo</a><!--Consider wrapping the text elements with a <p class="#"> so you can adjust leading without messing with cell size.-->
           <p>Adelaide, SA, Australia<br />
           <p class="yellow">April 27</p>
         </td>
-        <td>
-          <a class="head" href="#">Groovin the Moo</a>
+        <td id="gtm">
+          <a class="head" href="https://www.gtm.net.au/maitland/artist/portugal-the-man/">Groovin the Moo</a>
           <p>Maitland, NSW, Australia<br />
           <p class="yellow">April 28</p>
         </td>
-        <td>
-          <a class="head" href="#">Groovin the Moo</a>
+        <td id="gtm">
+          <a class="head" href="https://www.gtm.net.au/canberra/artist/portugal-the-man/">Groovin the Moo</a>
           <p>Canberra, ACT, Australia<br />
           <p class="yellow">April 29</p>
         </td>
       </tr>
-        <td>
-          <a class="head" href="#">Enmore Theatre</a>
+        <td id="enmore">
+          <a class="head" href="http://www.enmoretheatre.com.au/">Enmore Theatre</a>
           <p>Newtown, NSW, Australia<br />
           <p class="yellow">May 1</p>
         </td>
-        <td>
-          <a class="head" href="#">Forum Theatre</a>
+        <td id="forum">
+          <a class="head" href="https://forummelbourne.com.au/#events">Forum Theatre</a>
           <p>Melbourne, VIC, Australia<br />
           <p class="yellow">May 3</p>
         </td>
-        <td>
-          <a class="head" href="#">Groovin the Moo</a>
+        <td id="gtm">
+          <a class="head" href="https://www.gtm.net.au/bendigo/artist/portugal-the-man/">Groovin the Moo</a>
           <p>Bendigo, VIC, Australia<br />
           <p class="yellow">May 5</p>
         </td>
       </tr>
       <tr>
-        <td>
-          <a class="head" href="#">Groovin the Moo</a>
+        <td id="gtm">
+          <a class="head" href="https://www.gtm.net.au/townsville/artist/portugal-the-man/">Groovin the Moo</a>
           <p>Townsville, QLD, Australia<br />
           <p class="yellow">May 6</p>
         </td>
-        <td>
-          <a class="head" href="#">Powerstation</a>
+        <td id="powerstation">
+          <a class="head" href="https://www.powerstation.net.nz/shows/portugal-man-sold-out-may-2018">Powerstation</a>
           <p>Auckland, New Zealand<br />
           <p class="yellow">May 8</p>
         </td>
-        <td class="cell-type1">
-          <a class="view-type1" href="#">view more ...</a>
+        <td class="expand">
+          <p class="ui-view" href="#">view more ...</div>
         </td>
-      </tr>
-      <tr>
-        <td>
-          <a class="head" href="#">The Tivoli</a>
+        <td class="more-cells" id="tivoli">
+          <a class="head" href="https://thetivoli.com.au/">The Tivoli</a>
           <p>Fortitude Valley, Australia<br />
           <p class="yellow">May 10</p>
         </td>
-        <td>
-          <a class="head" href="#">Groovin the Moo</a>
+      </tr>
+      <tr>
+        <td class="more-cells" id="gtm">
+          <a class="head" href="https://www.gtm.net.au/bunbury/artist/portugal-the-man/">Groovin the Moo</a>
           <p>Bunbury, WA, Australia<br />
           <p class="yellow">May 12</p>
         </td>
-        <td>
-          <a class="head" href="#">Hangout Festival</a>
+        <td class="more-cells" id="hangout">
+          <a class="head" href="http://hangoutmusicfest.com/tickets/">Hangout Festival</a>
           <p>Gulf Shores, AL, US<br />
-          <p class="yellow">May 18 – 20</p>
+          <p class="yellow">May 18</p>
         </td>
-      </tr>
-      <tr>
-        <td>
-          <a class="head" href="#">Ascend Amphitheater</a>
+        <td class="more-cells" id="ascend">
+          <a class="head" href="http://www.ascendamphitheater.com/events">Ascend Amphitheater</a>
           <p>Nashville, TN, US<br />
           <p class="yellow">May 19</p>
         </td>
-        <td>
-          <a class="head" href="#">EXPRESS LIVE</a>
+      </tr>
+      <tr>
+        <td class="more-cells" id="express-live">
+          <a class="head" href="http://www.promowestlive.com/concert_venues/express-live-columbus-ohio">EXPRESS LIVE</a>
           <p>Columbus, OH, US<br />
           <p class="yellow">May 20</p>
         </td>
-        <td>
-          <a class="head" href="#">Stage AE</a>
+        <td class="more-cells" id="ae">
+          <a class="head" href="http://promowestlive.com/concert_venues/stage-ae-pittsburgh-pennsylvania">Stage AE</a>
           <p>Pittsburgh, PA, US<br />
           <p class="yellow">May 22</p>
         </td>
-      </tr>
-      <tr>
-        <td>
-          <a class="head" href="#">Budweiser Stage</a>
+        <td class="more-cells" id="budweiser">
+          <a class="head" href="https://www.livenation.com/venues/14878/budweiser-stage">Budweiser Stage</a>
           <p>Toronto, ON, Canada<br />
           <p class="yellow">May 24</p>
         </td>
-        <td>
-          <a class="head" href="#">Boston Calling</a>
+      </tr>
+      <tr>
+        <td class="more-cells" id="boston">
+          <a class="head" href="https://bostoncalling.frontgatetickets.com/?_ga=2.238076418.326356909.1527129345-229621434.1527129345">Boston Calling</a>
           <p>Cambridge, MA, US<br />
           <p class="yellow">May 25 – 27</p>
         </td>
-        <td class="cell-type1">
-          <a class="view-type1" href="#">view less ...</a>
+        <td class="more-cells" id="mt-jam">
+          <a class="head" href="http://mountainjam.com/tickets/">Mountain Jam</a>
+          <p>Hunter, NY, US<br />
+          <p class="yellow">Jun 15 — 17</p>
+        </td>
+        <td class="collapse">
+          <p class="ui-view" href="#">view less ...</a>
         </td>
       </tr>
     </tbody>
   </table>
   </div>
 </body>
+<script src="./assets/javascripts/jquery.min.js"></script>
+<script>
+  $(document).ready(function (){
+        $('.expand').on('click', function(){
+          $('.expand').fadeToggle(000);
+          $('.more-cells').fadeIn();
+          $('.collapse').fadeIn();
+        });
+
+        $('.collapse').on('click', function(){
+          $('.expand').fadeToggle(000);
+          $('.more-cells').fadeOut(000);
+          $('.collapse').fadeOut(000);
+        });
+      });
+</script>
+<script src ="https://form.jotform.com/static/feedback2.js" type="text/javascript">
+  </script><script type="text/javascript">
+    var JFL_81457158784166 = new JotformFeedback({
+      formId: '81457158784166',
+      base: 'https://form.jotform.com/',
+      windowTitle: 'Buy Merch',
+      background: '#ffba00',
+      fontColor: '#FFFFFF',
+      type: 'false',
+      height: 500,
+      width: 700,
+      openOnLoad: false
+      });
+  </script>
 </html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="The official media page of Portugal. The Man." />
+  <meta name="author" content="Design by Sino">
+  <title>Media</title>
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/bulma.min.css" />
+  <link rel="stylesheet" href="./assets/stylesheets/styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Changa+One" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="bg05">
+  <nav>
+    <ul>
+      <li><a href="/">home</a>
+      <li><a href="about.html">about</a>
+      <li><a href="discog.html">discog</a>
+      <li><a href="events.html">tours</a>
+      <li><a href="media.html">media</a>
+      <li><a href="swag.html">merch</a>
+      <li><a href="contact.html">contact</a>
+      <li><a href="https://www.facebook.com/portugaltheman" class="fa fa-facebook"></a>
+      <li><a href="https://portugaltheman.tumblr.com/" class="fa fa-tumblr"></a>
+      <li><a href="https://twitter.com/portugaltheman" class="fa fa-twitter"></a>
+      <li><img src="./assets/images/Cart2.svg" class="btn lightbox-81457158784166"></a>
+      </li>
+    </ul>
+  </nav>
+  <div class="main">
+  <h1>media</h1>
+    <section>
+      <div class="image-container box">
+        <img class="slides" src="./assets/images/photos/IMG 01.png">
+        <img class="slides" src="./assets/images/photos/IMG 02.jpg">
+        <img class="slides" src="./assets/images/photos/PTM Photo 01.jpg">
+        <img class="slides" src="./assets/images/photos/PTM Photo 02.jpg">
+        <img class="slides" src="./assets/images/photos/PTM Photo 03.png">
+        <div class="nav-button-left">
+          <button class="button is-large is-warning is-outlined" onclick="plusDivs(-1)">&#10094;</button>
+        </div>
+        <div class="nav-button-right">
+          <button class="button is-large is-warning is-outlined" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="media-container">
+        <div class="video is-flex is-horizontal-center box">
+          <iframe width="850" height="450" src="https://www.youtube.com/embed/pBkHHoOIIn8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><!--Multiply width by 0.5625 to receive height!-->
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="video-small box">
+          <iframe width="400" height="250" src="https://www.youtube.com/embed/2FrCliZ_Kfc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="video-small box">
+          <iframe width="400" height="250" src="https://www.youtube.com/embed/gr10LaYGysc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <span class="stretch"></span>
+      </div>
+      <div class="media-container">
+        <div class="video is-flex is-horizontal-center box" id="squeeze">
+          <iframe width="850" height="450" src="https://www.youtube.com/embed/2dQLPdy4Kzo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+<script src="./assets/javascripts/jquery.min.js"></script>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    function plusDivs(n) {
+    showDivs(slideIndex += n);
+    }
+    function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("slides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+  </script>
+  <script src ="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var JFL_81457158784166 = new JotformFeedback({
+        formId: '81457158784166',
+        base: 'https://form.jotform.com/',
+        windowTitle: 'Buy Merch',
+        background: '#ffba00',
+        fontColor: '#FFFFFF',
+        type: 'false',
+        height: 500,
+        width: 700,
+        openOnLoad: false
+        });
+    </script>
+</html>
